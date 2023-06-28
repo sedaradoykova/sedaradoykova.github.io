@@ -1,17 +1,19 @@
 
-# Welcome to Seda's webside 
+# Welcome to Seda's website 
 
-This is a beta version of the website, which is still under work. 
+This is a beta version of [Seda Radoykova's personal website](sedaradoykova.github.io), which is still under work. 
+
+You can learn more [about her](https://sedaradoykova.github.io/about.html) or [her work](https://sedaradoykova.github.io/projects.html) at a glance.  
+
 
 ----
 
-## Acknowledgements and template credits
+## Template acknowledgements
 
-Future Imperfect by HTML5 UP | html5up.net | @ajlkn
+Future Imperfect by HTML5 UP | html5up.net | AJ | aj@lkn.io | @ajlkn 
 
 _Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)_
 
-AJ | aj@lkn.io | @ajlkn
 
 ----
 
