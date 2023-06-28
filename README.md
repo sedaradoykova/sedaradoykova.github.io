@@ -1,9 +1,9 @@
 
 # Welcome to Seda's website 
 
-This is a beta version of [Seda Radoykova's personal website](sedaradoykova.github.io), which is still under work. 
+This is a beta version of [Seda Radoykova's personal website](https://sedaradoykova.github.io/), which is still under work. 
 
-You can learn more [about her](https://sedaradoykova.github.io/about.html) or [her work](https://sedaradoykova.github.io/projects.html) at a glance.  
+You can learn more [about her](https://sedaradoykova.github.io/content/about.html) or [her work](https://sedaradoykova.github.io/content/projects.html) at a glance.  
 
 
 ----
