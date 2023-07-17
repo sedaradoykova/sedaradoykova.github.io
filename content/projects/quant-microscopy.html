@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicons/apple-touch-icon.png?">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicons//favicon-32x32.png?">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicons//favicon-16x16.png?">
+<link rel="manifest" href="../../assets/img/favicons/site.webmanifest?">
+
+<html>
+	<head>
+		<title>Quantitative microscopy image processing</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h2> <a class="logo"> <img src="../../images/logo1.png" alt="" width="55px" class="logo"/> </a> </h2>
+						<h1> <a href="../../index.html">Seda Radoykova  </a> </nav> </h1>
+						<nav class="links">
+							<ul>
+								<li><a href="../about.html">About</a></li>
+								<li><a href="../cv.html">CV</a></li>
+								<li><a href="../projects.html">Projects</a></li>
+								<li><a href="../blog.html">Blog</a></li>
+								<li><a href="../contact.html">Contact</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<section id="menu">
+
+					<!-- Search -->
+						<section>
+							<form class="search" method="get" action="#">
+								<input type="text" name="query" placeholder="Search" />
+							</form>
+						</section>
+
+					<!-- Links -->
+						<section>
+							<ul class="links">
+								<li>
+									<a href="../about.html">
+										<h3>About</h3>
+										<p>A brief introduction</p>
+									</a>
+								</li>
+								<li>
+									<a href="../cv.html">
+										<h3>CV</h3>
+										<p>Latest resume</p>
+									</a>
+								</li>
+								<li>
+									<a href="../projects.html">
+										<h3>Projects</h3>
+										<p>More about my hands-on work</p>
+									</a>
+								</li>
+								<li>
+									<a href="../blog.html">
+										<h3>Blog</h3>
+										<p>The occasional geeky post</p>
+									</a>
+								</li>
+							</ul>
+						</section>
+
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="../contact.html" class="button large fit">Contact</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Image processing for quantitative microscopy </a></h2>
+										<p style="font-size:100%;">Summer internship (2021) | Royal Microscopical Society</p> 
+										<ul class="actions">
+											<li><a href="https://github.com/CulleyLab/fitting_lines" class="button large">GitHub</a></li>
+										</ul>
+									</div>
+									<div class="published">
+									<img src="../../images/projects/quant_micro_img.png" width="287px" class="author"/>
+									</div>
+									<!-- <div class="meta">
+										<time class="published" datetime="2023-27-06">June 27, 2023</time>
+										<a href="#" class="author"><span class="name">Seda Radoykova</span><img src="../images/avatar.jpg" alt="" /></a>
+									</div> -->
+								</header>
+
+								<!-- <span class="image featured"><img src="../images/pic01.jpg" alt="" /></span> -->
+								<p class="box"> I spent the summer of 2021 with the Culley Lab at the Randall Centre for Cell & Molecular Biophysics
+									(King's College London), funded by a Royal Microscopical Society summer studentship. I worked on a quantitative 
+									microscopy image processing project. My aim was to extract and quantify biologically relevant parameters from 
+									microscopy images of yeast microtubules, such as their number, length, curvature, <i>etc.</i>. <br/> <br/>
+									Quantitative microscopy is an important field where methods are currently limited. Taking rigorous and reproducible
+									measurements from microscopy data allows researchers to characterise novel phenomena or conduct statistical analysis on
+									<i>e.g.</i> different conditions in a clinical trial. My summer project was a fun and stimulating challenge, as it 
+									involved comparing the performance of morphological operations on images to applied 
+									mathematics to deep learning approaches, and I gained valuable programming experience, using Python, ImageJ (macros),
+									GitHub, and more.  
+								</p> <br/>
+								<strong>Research question</strong>  <!--class="box"-->
+								<p> How can image processing tools be used to quantify the linear structures present in fluorescence microscopy images of
+									labelled tubulin in <i>Schizosaccharomyces pombe</i> (<i>S. pombe</i>)? 
+								</p>
+								<strong>The dataset</strong>  
+								<p>I wrote some ImageJ macros to easily curate data from the wider field confocal microscopy images of the microtubules. 
+									Several cases of lines can be identified readily. I chose to focus on parametrising straight lines first. </p>
+									<!-- <ul style="margin:0; margin-left: 45px;" type="circle">
+										<li>aim</li>
+										<li>aim</li>
+									  </ul>  -->
+								<br/>
+								<!-- <span class="image featured"><img src="../../images/image_segmentation/hough_transform.png" alt="" width="100px" /></span> -->
+								<span class="image featured"><img src="../../images/image_segmentation/lines_cases.png" alt="" width="750px"/></span>
+
+
+								<h1 style="font-weight: bold;">Thresholding and skeletonisation</h1>  <!--class="box"-->
+								<p>First, I applied a global threshold to all images. This yielded binary images where, with a bit of post-processing, 
+									most of the labelled pixels belonged to lines.</p>
+								<p>Then I "skeletonised" these images. Skeletonisation is a morphological operation, whereby in a group of adjacent pixels, 
+									outermost pixels are deleted until the object represented by the group of pixels is narrowed down to a single line. In theory, 
+									this is an efficient way to count the number of lines and measure their length/curvature. It is also great for creating a 
+									labelled training data set for a convolutional neural network. 
+							 	</p>
+								<p>I obtained some excellent results for single lines (straight and curved, shown with blue arrows). However, intersecting lines were 
+									dealt with more poorly. Although sometimes the results were comparable to the original case (pink arrows), some segmentations
+									lead to severe artifacts (yellow arrows). The global threshold also broke up the lines, requiring more sophisticated algorithms.
+								</p>
+								<span class="image featured"><img src="../../images/image_segmentation/skeletonisation.png" alt="" width="750px"/></span>
+								
+
+								<h1 style="font-weight: bold;">The Linear Hough Transform</h1>  <!--class="box"-->
+								<p>The Linear Hough Transform parametrises lines in terms of polar coordinates. So, instead of <code>y = mx + c</code>, the 
+									parametrisation in Cartesian coordinate space, we use the Hesse normal form, converting the gradient and intercept into 
+									<code>y = [-cos(theta) / sin(theta)] x + [rho / sin(theta)]</code>. Here, theta is the angle between the x and the norm, 
+									and rho is the length of the norm. 
+								</p>
+								<p>I am <i>really</i> brushing over the mathematics, but the advantage of this approach is that vertical lines can be 
+									parametrised too. In fact, I tried fitting lines using linear regression for the simplest of cases; however, 
+									the use-case of this method was more limited than the Hough transform.
+								</p>
+								<p>A more intuitive way to think about the Hough transform is that every point in a plane can be thought of as infinitely 
+									many intersecting lines. Therefore, a point is converted to a line in Hough space, with unique rho and theta parameters. 
+									Therefore, For every point (x,y) and for every theta, calculate all values of rho using: rho = x cos(theta) + y sin(theta) 
+									(the Hesse normal).
+								</p>
+								<span class="image featured"><img src="../../images/image_segmentation/hough_transform_intuitive.png" alt="" width="750px"/></span>
+
+								<p>We can then use a peak-finding algorithm to detect peaks in polar Hough space. These peaks correspond to pairs, rho and theta,
+									describing the lines in the image. 
+								</p>
+								<p>The plots below show the Hough transform and peak-finding algorithm from the <code>sci-kit image</code> Python library
+									applied to an example of the skeletonised data (left) and another example of raw data (right). The accumulator in the Hough space is shown, with theta 
+									on the x-axis and rho on the y-axis.   
+								</p>
+								<span class="image featured"><img src="../../images/image_segmentation/hough_transform.png" alt="" width="750px"/></span>
+
+								<p>It is notable that the Hough transform was sensitive to brighter lines and the hyperparameters of the peak-finding algorithm 
+									required manual fine-tuning. I tried to clean up the peaks, using their line profiles, by fitting Gaussian functions to the
+									signal. This was effective in automatically discarding false positives if the number of peaks in the line profile was >1 or 
+									by thresholding the width of the signal.
+								</p>
+								<p>Of course, these post-processing steps required extra coding and hyper-parameter tuning. However, I appreciated the challenge 
+									of pushing the Hough transform to its limit.</p>
+								<span class="image featured"><img src="../../images/image_segmentation/line_profiles.png" alt="" width="750px"/></span>
+								
+								<h1 style="font-weight: bold;">Extensions: deep learning</h1>  <!--class="box"-->
+								<p>Although the methods I considered and hard-coded were effective for some use cases, I had only scratched the surface of what 
+									might appear to be a simple problem: labelling instances of lines in an image and quantifying simple parameters. To this end, 
+									deep learning for instance segmentation method that could cope with the full diversity of microtubule arrangements in a yeast cell. 
+									Although I did not have enough time to train my own Convolutional Neural Network (CNN), I had chosen an architecture, curated some data
+									using ImageJ macros, begun labelling it manually and semi-automatically using skeletonisation, and even augmented my data to supply enough
+									training data. I wanted to train a U-net from scratch and began setting up my Python environment with PyTorch and Keras.  
+								</p>
+								<p>The U-net is so called because of the U-shaped diagram of its architecture. It consists of an encoder branch, where the contracting path is 
+									composed of sequential down-sampling operations between convolutional layers. This reduces spatial information and increases feature 
+									information. The decoder branch holds the expansive path, where sequential transposed convolution and up-sampling operations propagate contextual
+									information, helping the neural net localise features more accurately. This award-winning CNN has performed exceptionally with biomedical data.  
+								</p>
+								<p>Brilliant adaptations of the U-net exist, in which instead of performing pixel-to-pixel mapping (<i>i.e.</i> assigning image pixels to labels), the 
+									net is trained to perform pixel-to-shape mapping. StarDist and SplineDist are two excellent examples of this approach. Both of these tools have been 
+									used to segment nuclei in microscopy images. The final question, which remains unanswered for now, is whether this idea could be extended to mapping lines. 
+									However, as Sian, my supervisor, pointed out very detecting 1D objects in 2D data could be challenging for a CNN. Although I would have loved to 
+									conclude my summer project with such a standalone and robust tool, unfortunately, the summer flew by far too fast.  
+								</p>
+
+								<p class="box">I deeply appreciated the opportunity to tackle a stimulating image processing problem in quantitative microscopy and thoroughly enjoyed pushing my solutions
+									to their limit and looking for better alternatives. It was an invaluable research experience which taught me a lot about microscopy, Python, and image processing.
+									Equipped with all these new image processing and segmentation skills in Python and ImageJ, I headed for my final year at UCL, where I joined the Simoncelli 
+									group at the London Centre for Nanotechnology and worked on segmenting the actin meshwork of activated T cells.  
+								</p>
+
+							<footer>
+									<ul class="icons">
+										<li><a href="../projects.html" class="button large">Browse all projects</a></li>
+									</ul>
+								</footer>
+							</article>
+						</div>
+
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="../contact.html" class="button large">Contact</a></li>
+							<li><a href="https://github.com/sedaradoykova" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/hale-seda-radoykova/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<!-- <li><a href="https://open.spotify.com/playlist/3oDQchbj9IkipAaDNgHSYt" class="icon brands fa-spotify"><span class="label">Spotify</span></a></li> -->
+							<li><a href="../contact.html" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Seda Radoykova, 2023. Design: <a href="http://html5up.net">HTML5 UP</a>.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>
