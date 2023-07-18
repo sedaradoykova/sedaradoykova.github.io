@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicons/apple-touch-icon.png?">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicons//favicon-32x32.png?">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicons//favicon-16x16.png?">
+<link rel="manifest" href="../../assets/img/favicons/site.webmanifest?">
+
+<html>
+	<head>
+		<title>Protometabolism kinetic modelling</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h2> <a class="logo"> <img src="../../images/logo1.png" alt="" width="55px" class="logo"/> </a> </h2>
+						<h1> <a href="../../index.html">Seda Radoykova  </a> </nav> </h1>
+						<nav class="links">
+							<ul>
+								<li><a href="../about.html">About</a></li>
+								<li><a href="../cv.html">CV</a></li>
+								<li><a href="../projects.html">Projects</a></li>
+								<li><a href="../blog.html">Blog</a></li>
+								<li><a href="../contact.html">Contact</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<section id="menu">
+
+					<!-- Search -->
+						<section>
+							<form class="search" method="get" action="#">
+								<input type="text" name="query" placeholder="Search" />
+							</form>
+						</section>
+
+					<!-- Links -->
+						<section>
+							<ul class="links">
+								<li>
+									<a href="../about.html">
+										<h3>About</h3>
+										<p>A brief introduction</p>
+									</a>
+								</li>
+								<li>
+									<a href="../cv.html">
+										<h3>CV</h3>
+										<p>Latest resume</p>
+									</a>
+								</li>
+								<li>
+									<a href="../projects.html">
+										<h3>Projects</h3>
+										<p>More about my hands-on work</p>
+									</a>
+								</li>
+								<li>
+									<a href="../blog.html">
+										<h3>Blog</h3>
+										<p>The occasional geeky post</p>
+									</a>
+								</li>
+							</ul>
+						</section>
+
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="../contact.html" class="button large fit">Contact</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Modelling the kinetics of protometabolism</a></h2>
+										<p style="font-size:100%;">MSci Investigative Project | Lane Origins Group | UCL</p> 
+										<ul class="actions">
+											<li><a href="https://github.com/sedaradoykova/BIOL0044_protometabolism_modelling" class="button large">GitHub</a></li>
+										</ul>
+									</div>
+									<div class="published">
+									<img src="../../images/projects/protometab.gif" width="287px" class="author"/>
+									</div>
+									<!-- <div class="meta">
+										<time class="published" datetime="2023-27-06">June 27, 2023</time>
+										<a href="#" class="author"><span class="name">Seda Radoykova</span><img src="../images/avatar.jpg" alt="" /></a>
+									</div> -->
+								</header>
+
+								<!-- <span class="image featured"><img src="../images/pic01.jpg" alt="" /></span> -->
+								<p class="box"> How does one investigate the origin of metabolism? Although the origin of life and metabolism may 
+									seem obscure and unknowable, there is enough research and rigorous methods exist to test hypotheses about it. 
+									For my MSci Investigative Project in the Biological Sciences, I used advanced stochastic modelling techniques to 
+									investigate the kinetic requirements that would enable a primordial metabolic network to exist and propagate.   
+								</p> <br/>
+								<h1 style="font-weight: bold;">Background</h1>  <!--class="box"-->
+								<p>Before we dive into mathematical models and mass-action kinetics, let's consider the theoretical background which underpinned 
+									my project: non-enzymatic protometabolism. There is biochemical and phylogenetic evidence to suggest that LUCA, the last universal 
+									common ancestor, was basal to Archaea and Bacteria. "Using “life as a guide” to its own origins" is a simple yet fascinating paradigm  
+									for investigating the origin of life. Accordingly, the core of modern metabolism is believed to be largely conserved between Archaea 
+									and Bacteria. As many will know, enzymes kinetically “speed up” already geochemically spontaneous reactions. However, under non-enzymatic
+									protometabolism, the core of metabolism is thought to be 
+									<ul style="margin:0; margin-left: 45px;" type="circle">
+										<li>Is parsimonious</li>
+										<li>Bridges the gap between protometabolism and modern metabolism</li>
+										<li>Resolves the end-product problem</li>
+									  </ul> 
+								</p>
+								<p>For a more thorough map of protometabolism with this view, you can turn to Harrison S & Lane N. Life as a guide to prebiotic nucleotide synthesis.
+									Nat Commun 9, 5176 (2018). Briefly however, in contrast to most experimental work to date, the Lane Origins group examines how metabolism 
+									arose from H2 and CO2 fixation, common to practically all living organisms:  
+									<ul style="margin:0; margin-left: 45px;" type="circle">
+										<li>Sequential reactions of H2 with CO2 in biology gives rise to acetyl CoA and Krebs cycle intermediates</li>
+										<li>Amino acids, fatty acids and sugars all derive from Krebs cycle intermediates</li>
+										<li>Nucleotides derive from precursors shown in red boxes</li>
+									  </ul> 
+								</p>
+
+								<strong>Why use kinetic modelling?</strong>  <!--class="box"-->
+								<p>As there are vastly different experimental conditions, modelling could help shrink experimental possibilities. Moreover, 
+									it opens the possibility to consider so many interesting questions: 
+									<ul style="margin:0; margin-left: 45px;" type="circle">
+										<li>How much of modern metabolism can we recover, starting from CO2 and H2?</li>
+										<li>How does the flux of matter propagate through the network?</li>
+										<li>What are the bottlenecks?</li>
+										<li>How robust is the network to changes in conditions?</li>
+										<li>How (self)contradictory is the network?</li>
+									  </ul>		
+									To investigate some of these questions, I considered a small reaction network of composed of six simplified, non-enzymatic
+									reactions for carbon fixation via the Wood-Ljungdahl pathway.  						
+								</p>
+								<br/>
+								<!-- <span class="image featured"><img src="../../images/image_segmentation/hough_transform.png" alt="" width="100px" /></span> -->
+								<span class="image featured"><img src="../../images/protometabolism/c_fixation.png" alt="" width="750px"/></span>
+
+
+								<h1 style="font-weight: bold;">Stochastic kinetic modelling: the Gillespie algorithm</h1>  <!--class="box"-->
+								<p>Broadly, mathematical models can be thought of as existing on two spectra: from deterministic to stochastic; while time could 
+									range from discrete to continuous. There is always a tradeoff between exactness and computational power. 
+									For instance, systems of ordinary differential equations (ODEs) are useful when we are interested 
+									in the "averaged-out", smoothed behaviour of the system over time. However, deterministic models cannot capture the 
+									stochasticity/random effects/heterogeneity <i>of systems</i> and which <i>impacts systems</i> with few reactants.
+									In this case, discrete, stochastic simulations are a better alternative. I used the Gillespie algorithm. 
+									Specifically, I used an exact stochastic simulation algorithm (SSA). Exact refers to algorithm generating 
+									a “statistically correct trajectory” of the biochemical reactions.
+									The method I chose was also direct: every reaction was a discrete event in continuous time. 
+
+								</p>
+								<p>We are modelling a closed, compartmentalised system where every compartment is populated with a known number 
+									of molecules at any given time. Therefore, to describe the time evolution of a multistate system, two objects are created for every reaction. 
+									First, the propensity function: <code>aj(x)dt = rate x Nreactants</code>. It describes the probability that reaction j will occur in the next 
+									infinitesimal time interval [t, t + dt], <i>e.g.</i> for the reaction A + B --> AB, the propensity is
+									<code>kf  x  NA  x  NB</code>, where kf refers to the rate of the reaction. See some examples of propensity functions 
+									for the simulated network in the figure above. Second, the state-change vector, <code>vj ≡ (v1j , . . . , vNj)</code>, 
+									where v_ij is the change in the number of individuals in population i caused by one reaction of type j. For instance, 
+									for <code>A + B --> AB</code> this will simply be <code>[-1,   -1,   +1]</code>.
+									  
+							 	</p>
+								
+								<h1 style="font-weight: bold;">Sensitivity analysis</h1>  <!--class="box"-->
+								<p>One of the questions that I was interested in was how the system behaved under different conditions. This is a slightly 
+									more unusually formulated question, as most modellers are usually interested in <i>estimating</i> single parameter values 
+									and combination. I was interested in a <i>range</i> of parameters under which a condition would hold <i>e.g.</i> under what 
+									kinetic conditions we could recover formaldehyde. Therefore, sensitivity analysis could reveal the relationships between 
+									the variables and their parameters. The literature and methods suited to answering broader and more abstract questions is still
+									being developed for stochastic models. Moreover, many of the methods are suited to work with complete or partial data 
+									(<i>i.e.</i> fitting and optimisation for a set of parameters). In my report, I reviewed advanced brute-force (read, computationally expensive, 
+									for example Latin hypercube sampling) and heuristic (sacrificing exactness for performance; for example, simulated annealing and sequential 
+									probability ratio test (SPRT) or SParSE++) techniques for parameter estimation.   
+								</p>
+								<p>For simplicity's sake and as a proof of concept, I used a Latin hypercube sampling-based (LHS) sensitivity analysis technique, 
+									using the <code>pse</code> R package. The steps are summarised below. 
+								</p>
+								<span class="image featured"><img src="../../images/protometabolism/senitivity_analysis.jpg" alt="" width="750px"/></span>
+								
+								<p>The partial rank correlation coefficients (PRCC) of every parameter against every molecule are given in Fig. 3. The ten kinetic 
+									parameters of the five CO2 fixation reactions were modelled as uniformly distributed with range [0.01,100]; N=50 Latin hypercube 
+									samples were drawn from the stratified parameter space. a. Partial rank correlation coefficients for every compound against every 
+									kinetic parameter; b. table with the reactions and their respective propensity functions (b in the subscript refers to “backwards 
+									reaction”); c. network visualisation which relates the reactants and products across CO2 fixation. 
+								</p>
+								<span class="image featured"><img src="../../images/protometabolism/sensitivity_results.png" alt="" width="750px"/></span>
+								<p>
+									As expected, the individual chemical species were sensitive to the parameters which catalyse their reactions. Further, predictably, 
+									in some cases the kinetics of the forward and backward reaction had opposite signs for their PRCCs. However, in other cases, the 
+									impacts of upstream reactions was more prominent. 
+									<br/><br/>
+									All chemical species were significantly sensitive to 4-5 parameters (n=37, in total). There were similar numbers 
+									of significant positive and negative coefficients (n=18 and n=19, respectively). The quantity of a molecule was positively 
+									correlated with the reactions which catalysed its formation and negatively with those catalysing its breakdown. This was especially 
+									evident for limiting reactants or molecules which participated in multiple reactions, for example CO2, H2, H2O. Beyond this, 
+									quantities were sometimes sensitive to the formation of their reactants, as seen, for example, for acetic acid. It would be 
+									interesting to see how much further such trends extend in larger networks. 
+									<br/><br>
+									This analysis allowed the identification of bottlenecks in the network. In this case, the competition between CO and methanol was 
+									highlighted qualitatively in the previous section. Sensitivity analysis revealed that methanol was 
+									significantly positively correlated with several parameters for which CO was negatively correlated: k_2 (formaldehyde formation, 
+									reactant for methanol formation), k_3 (methanol formation), k_5b (CO breakdown). Acetic acid, whose formation depends on both 
+									methanol and CO supply, was also sensitive to these parameters.
+								</p>
+								
+
+								<p class="box">This investigative project implemented a simple kinetic model of protometabolism. Whilst the network is incomplete, 
+									it is growable and adaptable. The simulation output indicated that the model works accurately for reversible reactions.
+									<br/><br/> 
+									More generally, reversible kinetic model has the potential of elucidating the dynamics of the network, but it could potentially 
+									allow a realistic investigation of more scientifically interesting behaviours of metabolic flux to be captured. Further, 
+									I adapted Latin hypercube sampling and sensitivity analysis to investigate the parameter space of the kinetic model. 
+									While it would be premature to draw conclusions about the behaviour of the reversible CO2 fixation network, the PSE 
+									results were coherent with the model simulation output. 
+									<br/><br/>
+									Overall, although simple, the kinetic model proposed in this project could be applied to the investigation of stimulating 
+									questions about the origin of metabolism, of the genetic code, of protocell proliferation, and about the origin of life. 
+									The contribution of this work to the field lies beyond the kinetic model, extending into the discussion of the wider 
+									challenges of parameter space exploration and validity of stochastic kinetic models. An important omission of 
+									this work is the thermodynamic aspect of the metabolic network. As it is not negligible, the incorporation of 
+									thermodynamic constraints in future models would be challenging but exciting.
+								</p>
+
+							<footer>
+									<ul class="icons">
+										<li><a href="../projects.html" class="button large">Browse all projects</a></li>
+									</ul>
+								</footer>
+							</article>
+						</div>
+
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="../contact.html" class="button large">Contact</a></li>
+							<li><a href="https://github.com/sedaradoykova" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/hale-seda-radoykova/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<!-- <li><a href="https://open.spotify.com/playlist/3oDQchbj9IkipAaDNgHSYt" class="icon brands fa-spotify"><span class="label">Spotify</span></a></li> -->
+							<li><a href="../contact.html" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Seda Radoykova, 2023. Design: <a href="http://html5up.net">HTML5 UP</a>.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>
