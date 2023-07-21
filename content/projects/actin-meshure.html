@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicons/apple-touch-icon.png?">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicons//favicon-32x32.png?">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicons//favicon-16x16.png?">
+<link rel="manifest" href="../../assets/img/favicons/site.webmanifest?">
+
+<html>
+	<head>
+		<title>ActinMeshure</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h2> <a class="logo"> <img src="../../images/logo1.png" alt="" width="55px" class="logo"/> </a> </h2>
+						<h1> <a href="../../index.html">Seda Radoykova  </a> </nav> </h1>
+						<nav class="links">
+							<ul>
+								<li><a href="../about.html">About</a></li>
+								<li><a href="../cv.html">CV</a></li>
+								<li><a href="../projects.html">Projects</a></li>
+								<li><a href="../blog.html">Blog</a></li>
+								<li><a href="../contact.html">Contact</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<section id="menu">
+
+					<!-- Search -->
+						<section>
+							<form class="search" method="get" action="#">
+								<input type="text" name="query" placeholder="Search" />
+							</form>
+						</section>
+
+					<!-- Links -->
+						<section>
+							<ul class="links">
+								<li>
+									<a href="../about.html">
+										<h3>About</h3>
+										<p>A brief introduction</p>
+									</a>
+								</li>
+								<li>
+									<a href="../cv.html">
+										<h3>CV</h3>
+										<p>Latest resume</p>
+									</a>
+								</li>
+								<li>
+									<a href="../projects.html">
+										<h3>Projects</h3>
+										<p>More about my hands-on work</p>
+									</a>
+								</li>
+								<li>
+									<a href="../blog.html">
+										<h3>Blog</h3>
+										<p>The occasional geeky post</p>
+									</a>
+								</li>
+							</ul>
+						</section>
+
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="../contact.html" class="button large fit">Contact</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Actin Meshure</a></h2>
+										<p style="font-size:100%;">MSci Extended Research Project | Simoncelli group</p> 
+										<p style="font-size: 100%;">London Centre for Nanotechnology | UCL </p>
+										<ul class="actions">
+											<li><a href="https://github.com/sedaradoykova/BIOL0044_protometabolism_modelling" class="button large">GitHub</a></li>
+											<li><a href="https://actinmeshure.readthedocs.io/en/latest/index.html" class="button large">Documentation</a></li>
+										</ul>
+									</div>
+									<div class="published">
+									<img src="../../images/projects/cells.gif" width="287px" class="author"/>
+									</div>
+									<!-- <div class="meta">
+										<time class="published" datetime="2023-27-06">June 27, 2023</time>
+										<a href="#" class="author"><span class="name">Seda Radoykova</span><img src="../images/avatar.jpg" alt="" /></a>
+									</div> -->
+								</header>
+
+								<!-- <span class="image featured"><img src="../images/pic01.jpg" alt="" /></span> -->
+								<p class="box">In this exciting project, I was tasked with analysing a large data set of about 100 super-resolution 
+									microscopy images of labelled actin primary and CAR (chimeric antigen receptor) T cells in contact with an activating surface. 
+									The actin cytoskeleton is thought to play an integrative role in immunological synapse (IS) formation at the interface 
+									between T cells and antigen presenting cells (APCs). Actin remodelling is thought to facilitate the biochemical 
+									and spatio-temporal integration of signalling at the synapse. The images taken with a STED (stimulated emission 
+									depletion) microscope were fascinating, as they revealed the dense actin mesh close to the IS interface and 
+									slightly deeper into the cell. My task was to quantify this mesh. 
+								</p> <br/>
+								<strong>Aims and objectives</strong>  <!--class="box"--><br/> 
+								<ul style="margin:0; margin-left: 45px;" type="circle">
+										<li>Quantify the actin dynamics in cells after different activation times. </li>
+										<li>Build a reproducible, installable, and documented Python pipeline</li>
+								  	</ul> <br/>
+						
+								<strong>The dataset</strong>  <!--class="box"--> <br/> 
+								<p>Each TIFF file consisted of about 10-14 frames, where different planes of the contact 
+									surface were imaged. We selected several (1-4) frames closer to the contact surface (basal mesh) 
+									and deeper into the cell (cytoplasmic mesh). These were analysed with the following semi-automated pipeline.</p>
+								<br/>
+
+								<strong>The analysis pipeline</strong>  <!--class="box"--> <br/> 
+								<p><strong><i>ActinMeshure</i></strong>, as the name suggests, is an image processing tool which aids the manipulation and processing of super-resolution 
+									images of the actin mesh in activated lymphocytes. <strong><i>ActinMeshure</i></strong> be used the measure (please, excuse the pun) parameters of 
+									interest in the segmented meshes. To demonstrate how <strong><i>ActinMeshure</i></strong> was designed and applied, I will introduce the different 
+									classes and how they were applied to my data set. This pipeline was based on Fritzsche et al., Sci. Adv.3, e1603032 (2017); however, it was adapted 
+									and streamlined into a single analysis environment in Python.</p>
+								<br/>
+								<!-- <span class="publishd"><img src="../../images/actin_meshure/flow_chart.png" alt="" width="500px" /></span> -->
+								
+								<br/>
+								<h1 style="font-weight: bold;">The ActImg class: Segmenting the mesh</h1>  <!--class="box"-->
+								<p>I have made a lay graphical summary of the analysis pipeline used to segment the actin mesh from the deconvoluted microscopy data. 
+									The first step of the data analysis was to obtain a binary mask, where all pixels belonging to the actin mesh were labelled with 1, 
+									and background was 0. This was achieved in highly heterogeneous images with a dynamic range of four orders of magnitude. 
+								</p>
+								<span class="image featured"><img src="../../images/actin_meshure/actimg_segmentation.png" alt="" width="750px"/></span>
+								
+								<br/>
+								<h1 style="font-weight: bold;">The ActImgBinary class: Quantifying the mesh</h1>  <!--class="box"-->
+								<p>Having segmented the mesh, the binary mask could now be used to obtain estimates of relevant parameters. I was able to implement 
+									functions which could quantify the percentage actin mesh density as well as different measure of the size of all individual holes 
+									in the mesh, or a summary, such as the median.
+								</p>
+								
+								<p>This step is crucial, as this is where all the insight about the mesh structure and actin dynamics is extracted. If at the segmentation 
+									stage above, it was key to avoid introducing artifacts, now the question is how the image can be "summarised" or "measured" using 
+									suitable parameters for appropriate statistical testing. For instance, look at the two cells in the gray box below: how can they be 
+									compared reliably? This is where the parametrisation comes in. An example of measuring the hole area is shown on the right below.  
+								</p>
+								<span class="image featured"><img src="../../images/actin_meshure/actimg_binary.png" alt="" width="750px"/></span>
+								
+								<br/>
+								<h1 style="font-weight: bold;">The ActImgCollection class: Batch-processing data</h1>  <!--class="box"-->
+								<p>Finally, applying this pipeline individually to data from 100 images from different treatments and conditions would 
+									have been tedious. I implemented a class which could aid the batch-processing of data. This class could interactively 
+									set up a pipeline and appropriate hyperparameters (given as function arguments); handle all relevant 
+									meta-data for every entry, provided as an excel spreadsheet; and provide a table and/or graphical (HTML-based) 
+									summary of the intermediates for every analysed image for manual inspection. 
+								</p>
+								<span class="image featured"><img src="../../images/actin_meshure/actimg_collection.png" alt="" width="750px"/></span>
+								
+								<br/>
+								<h1 style="font-weight: bold;">Conclusion and future work</h1>  <!--class="box"-->
+								<p>This was a challenging but rewarding project. Extracting the maximum amount of biologically relevant and 
+									quantitatively accurate information from super-resolution microscopy images is non-trivial. There are many caveats, and 
+									introducing bias is easy. Nevertheless, documenting one's work, making it accessible and reproducible is how standards can be 
+									set in the community regarding the best techniques and algorithms to apply to bioimage data.   
+								</p>
+								<p>Currently, there are limited parameters which can be quantified from the images, and they are all related to the mesh density through 
+									hole size. However, more advanced analyses could consider the spatial distribution of the holes or count the number of actin protrusions, 
+									as these protrusions are believed to have important signalling functions. Overall, the challenge is to devise analysis techniques 
+									which truly leverage the information content of the super-resolution data. 
+								</p>
+
+								<br/><br/>
+								<p class="box">To conclude, this was the first standalone tool I created on my own. I tried to follow best practices in software engineering: 
+									writing unit tests, validating inputs for functions, flagging invalid input with appropriate errors and warnings. I created 
+									a documentation page for the project which I published on 
+									<a href="https://actinmeshure.readthedocs.io/en/latest/index.html">Read the Docs</a>. As of the publication of this page, I am 
+									still working on polishing the tool's functionalities and adapting it to use with more diverse data types, finishing the documentation, 
+									and increasing the test coverage, so that when future extensions of this core toolbox are implemented, they can be plugged in seamlessly. 
+								</p>
+
+							<footer>
+									<ul class="icons">
+										<li><a href="../projects.html" class="button large">Browse all projects</a></li>
+									</ul>
+								</footer>
+							</article>
+						</div>
+
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="../contact.html" class="button large">Contact</a></li>
+							<li><a href="https://github.com/sedaradoykova" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/hale-seda-radoykova/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<!-- <li><a href="https://open.spotify.com/playlist/3oDQchbj9IkipAaDNgHSYt" class="icon brands fa-spotify"><span class="label">Spotify</span></a></li> -->
+							<li><a href="../contact.html" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Seda Radoykova, 2023. Design: <a href="http://html5up.net">HTML5 UP</a>.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>
