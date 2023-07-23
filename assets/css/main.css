@@ -202,6 +202,17 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
+	/* CSS for the "math inline" class */
+	.math.inline {
+		display: inline;
+		font-family: "Computer Modern", "Times New Roman", serif; /* Use a font that resembles LaTeX math font */
+		font-size: 16px;
+		color: black; /* Use black color for math equations */
+		padding: 2px 5px; /* Add some padding around the math equations for better visual appearance */
+		/* background-color: #f0f0f0; /* Use a light gray background to simulate LaTeX style */
+		/* border: 1px solid #ccc; /* Add a border for a boxed effect */
+	}
+
 	h1, h2, h3, h4, h5, h6 {
 		color: #3c3b3b;
 		font-family: "Raleway", Helvetica, sans-serif;
