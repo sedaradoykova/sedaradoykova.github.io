@@ -1,0 +1,464 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicons/apple-touch-icon.png?">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicons//favicon-32x32.png?">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicons//favicon-16x16.png?">
+<link rel="manifest" href="../../assets/img/favicons/site.webmanifest?">
+
+<html>
+	<head>
+		<title>Modelling waning SARS-CoV-2 vaccination immunity</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h2> <a class="logo"> <img src="../../images/logo1.png" alt="" width="55px" class="logo"/> </a> </h2>
+						<h1> <a href="../../index.html">Seda Radoykova  </a> </nav> </h1>
+						<nav class="links">
+							<ul>
+								<li><a href="../about.html">About</a></li>
+								<li><a href="../cv.html">CV</a></li>
+								<li><a href="../projects.html">Projects</a></li>
+								<li><a href="../blog.html">Blog</a></li>
+								<li><a href="../contact.html">Contact</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<section id="menu">
+
+					<!-- Search -->
+						<section>
+							<form class="search" method="get" action="#">
+								<input type="text" name="query" placeholder="Search" />
+							</form>
+						</section>
+
+					<!-- Links -->
+						<section>
+							<ul class="links">
+								<li>
+									<a href="../about.html">
+										<h3>About</h3>
+										<p>A brief introduction</p>
+									</a>
+								</li>
+								<li>
+									<a href="../cv.html">
+										<h3>CV</h3>
+										<p>Latest resume</p>
+									</a>
+								</li>
+								<li>
+									<a href="../projects.html">
+										<h3>Projects</h3>
+										<p>More about my hands-on work</p>
+									</a>
+								</li>
+								<li>
+									<a href="../blog.html">
+										<h3>Blog</h3>
+										<p>The occasional geeky post</p>
+									</a>
+								</li>
+							</ul>
+						</section>
+
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="../contact.html" class="button large fit">Contact</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Modelling waning SARS-CoV-2 vaccination immunity</a></h2>
+										<p style="font-size:100%;">Summer Project | Data Science Intern</p> 
+										<p style="font-size: 100%;">Hollingsworth group | Big Data Institute </p>
+										<ul class="actions">
+											<li><a href="https://github.com/sedaradoykova/pomp_handover" class="button large">GitHub</a></li>
+										</ul>
+									</div>
+									<div class="published">
+									<img src="../../images/waning_immunity/vaccination_waning_immunity.png" width="387px" class="author"/>
+									</div>
+									<!-- <div class="meta">
+										<time class="published" datetime="2023-27-06">June 27, 2023</time>
+										<a href="#" class="author"><span class="name">Seda Radoykova</span><img src="../images/avatar.jpg" alt="" /></a>
+									</div> -->
+								</header>
+
+								<!-- <span class="image featured"><img src="../images/pic01.jpg" alt="" /></span> -->
+								<p class="box">During the summer of 2021 when I was there, the Hollingsworth group worked on cutting edge research and participated in multiple policy consortia 
+									which advised the government on the dynamics of the pandemic. One of the most pressing questions that summer was 
+									the future of COVID-19. The vaccination programme was starting to alleviate the pressure on the healthcare system. 
+									So the next question in line was whether waning vaccination immunity would lead to another insurgence of cases, as the 
+									susceptible group was replenished. This was my first and very rapid introduction to dynamic modelling. I was tasked with 
+									extending an existing difference-equation COVID-19 transmission-dynamic model to include vaccination and waning 
+									vaccination immunity. Moreover, I also tried to explore the suitability of a partially observed Markov process model 
+									to simulate the dynamics of transmission and/or estimate parameters of interest. 
+								</p> <br/>
+								<strong>Research question</strong>  <!--class="box"-->
+								<p>What could the impacts of waning SARS-CoV-2 infection and vaccination immunity be on the 
+									transmission dynamics in the UK in the short and medium term?
+								</p>
+								<strong>Background information</strong>  
+								<p>The group had already published an age-structured deterministic model. The model was a discrete-time gamma 
+									delay-distributed SEIRS model (susceptible, exposed, infectious, recovered, susceptible) with 
+									symptomatic/asymptomatic and age-stratified transmission. Accounting for waning infection immunity, it attributed 
+									longer-lasting immunity to hospitalised patients than non-hospitalised. This model was to be extended to include 
+									vaccination and waning immunity from vaccination as well. 
+								</p>
+								<p><i>
+									Crellen Thomas, Pi Li, Davis Emma L., Pollington Timothy M., Lucas Tim C. D., Ayabina Diepreye, 
+									Borlase Anna, Toor Jaspreet, Prem Kiesha, Medley Graham F., Klepac Petra and Déirdre Hollingsworth T. 
+									2021. Dynamics of SARS-CoV-2 with waning immunity in the UK populationPhil. Trans. R. Soc. 
+									<a href="http://doi.org/10.1098/rstb.2020.0274">http://doi.org/10.1098/rstb.2020.0274</a>. 
+								</p></i>
+									<!-- <ul style="margin:0; margin-left: 45px;" type="circle">
+										<li>aim</li>
+										<li>aim</li>
+									  </ul>  -->
+								<br/>
+								<!-- <span class="image featured"><img src="../../images/image_segmentation/hough_transform.png" alt="" width="100px" /></span> -->
+
+								<h1>Questions of interest</h1>
+								<ul>
+									<li>Are vaccinated individuals less susceptible to infection than non-vaccinated ones?</li>
+									<li>Does vaccinatoin protect against symptomatic disease? (Rather what is the proportion of asymptomatic 
+										cases in the infections reported by vaccinated individuals?)</li>
+									<li>Do infected vaccinated individuals “replenish” their immunity upon recovery from infection?
+									<li>Is the effect the same for symptomatic and asymptomatic cases?</li>
+									<li>Does vaccination protect against hospitalisation?</li>
+									<li>Do the R boxes contribute to transmission?</li>
+								</ul>
+
+								<h1>Implications for policy</h1>
+								<ul>
+									<li>Future of the pandemic <i>i.e.</i> what the winter of 2021 couold look like.</li>
+									<li>Booster shot vs no booster shot ~ impact on transmission</li>
+									<li>Waning immunity <i>vs</i> immune evasion <i>vs</i> increased contact <em>i.e.</em> how 
+										much vaccinated people transmit the Delta variant?</li>
+									<li>Would vaccine passports be necessary or useful?</li>
+									<li>What is the threshold for herd immunity with imperfect vaccination?</li>
+								</ul>
+
+								<h2 style="font-weight: bold;">Some more background: the SIR model</h2>  <!--class="box"-->
+								 <!-- <ul>
+									<li><span class="math inline">\(x = \frac{{-b \pm \sqrt{{b^2-4ac}}}}{{2a}}\)</span></li>
+									<li><span class="math inline">\(\alpha + \beta = \gamma\)</span></li>
+									<li><span class="math inline">\(A_{n+1} = A_n + d\)</span></li>
+									<li><span class="math inline">\(x^2 + y^2 = r^2\)</span></li>
+								  </ul> -->		
+								<p>To avoid diving straight into deep waters, let's consider a simple transmission dynamic model where three 
+									compartments exist: susceptible, infected, recovered. The compartments can be modelled in terms of absolute number of 
+									people in them or as a fraction of the total population. Accordingly, these are the equations that emerge. 
+								</p>
+
+								<table class="table" style="width: 100%; font-size: smaller;">
+									<tr>
+										<th>Compartment (absolute)</th>
+										<th>Equation</th>
+										<th>Compartment (relative)</th>
+										<th>Equation</th>
+									</tr>
+									<tr>
+										<td><span class="math inline">\(S = S(t)\)</span> the number of susceptible individuals;</td>
+										<td><span class="math inline">\(\frac{dS}{dt} = -\beta \frac {S(t)} {N}\)</td>
+										<td><span class="math inline">\(s(t) = \frac {S(t)} {N}\)</span> the susceptible fraction of the population;</td>
+										<td><span class="math inline">\(\frac{ds}{dt} = -\beta s(t) i(t)\)</span></td>
+									</tr>
+									<tr>
+										<td><span class="math inline">\(I = I(t)\)</span> the number of infected individuals;</td>
+										<td><span class="math inline">\(\frac{dE}{dt} = \beta S I - (\mu + \sigma)E\)</span></td>
+										<td><span class="math inline">\(i(t) = \frac {I(t)} {N}\)</span> the infected fraction of the population;</td>
+										<td><span class="math inline">\(\frac{di}{dt} = \beta s(t) i(t) - \gamma i(t)\)</span></td>
+									</tr>
+									<tr>
+										<td><span class="math inline">\(R = R(t)\)</span> the number of recovered individuals.</td>
+										<td><span class="math inline">\(\frac{dI}{dt} = \sigma E - (\mu + \gamma)I\)</span> $ = I - R$</td>
+										<td><span class="math inline">\(r(t) = \frac {R(t)} {N}\)</span> the recovered fraction of the population.</td>
+										<td><span class="math inline">\(\frac{dr}{dt} = \gamma i(t)\)</span></td>
+									</tr>
+								</table> <br/>
+
+								<h2 style="font-weight: bold;">POMP for S(E)IR</h2>  <!--class="box"-->
+								<p>Now is a good time to mention POMP: partially observed Markov processes. As the name suggests, these 
+									are Markov processes which in addition to having a probability of occurring, also have a probability of 
+									being observed. This is great for modelling many biological phenomena, as the data collection process is 
+									imperfect, and survey coverage is rarely complete. For example, there is a probability that an individual 
+									will become infected <strong>and</strong> a probability that the infection will be recorded.     
+								</p>
+								<p>With this in mind, I tried to simulate the transmission dynamics using the SIR and SEIR (a model accounting for 
+									the latent period of an infection, where an individual has been <i>exposed</i> to the disease but is not yet 
+									<i>infectious</i>) models. To this end, I used the <code>pomp</code> package in R. The simulations relied on 
+									the so-called “tau-leap” algorithm, one version of which is implemented in <em>pomp</em> via the <code>euler</code>
+									plug-in. This is a heuristic (hence more computationally efficient but less exact) version of the direct Gillespie 
+									algorithm (more about the Gillespie algorithm in my 
+									<a href="protometabolism.html">protometabolism modelling project here</a>).
+								</p>
+								<p>I was excited to get the SEIR simulations to work. I also tried to adapt the POMP model to account for gamma-distributed waiting 
+									times, but it did not quite work as expected. Therefore, I spent the remainder of my time with the group trying to 
+									understand why the results of the simulations did not correspond to the expectations. Reading source code and the 
+									documentation was challenging but rewarding, as I learned about the mechanics of the code very rapidly. I also wrote up
+									and annotated all the working code for handover in my GitHub.
+								</p>
+
+								<h2 style="font-weight: bold;">Extending the extant difference-equation model</h2>
+								<p style="position: relative">
+									This may be a bold leap from S(E)IR, but below is the extended version of the published transmission-dynamic model. 
+									Although I did not have time to adapt the original code to  
+									It reflects completely different infection and recovery dynamics for vaccinated individuals. 
+									There is waning immunity from infection recovery as 
+									well as vaccination. The model assumes that individuals are vaccinated and gain immunity at some rate (probability) 
+									constant per age group <span class="math inline">\(\theta_{i}\)</span>. This could be made continuously distributed
+									of needed: <span class="math inline">\(f_{t}(...)\)</span>. 
+									The model also implies that <span class="math inline">\(E^{V}\)</span>, <span class="math inline">\(I^{V}\)</span>, 
+									and <span class="math inline">\(R^{V}\)</span> have their own <span class="math inline">\(F_{t}\)</span> parameters 
+									which differ between vaccinated and non-vaccinated individuals. Finally, vaccinated individuals who recover from 
+									infection “replenish” their vaccination immunity, <em>i.e.</em>, <span class="math inline">\(R^{V}\)</span> 
+									flows into <span class="math inline">\(V\)</span>.
+
+									<img src="../../images/waning_immunity/vaccination_waning_immunity.png" alt="" width="750px" style="float: right; margin: 0 0 10px 10px;"/>
+								</p>
+										<h3>Susceptible</h3>
+										<p><span class="math inline">\(S_{t+1} = S_{t} (1 - \theta_{i} - \lambda_{t+1}) + f_{t}(R^{N};o,\omega^{N}) +
+											f_{t}(R^{H};o,\omega^{H})\)</span></p>
+										<p><span class="math inline">\(S_{t+1}^{V} = S_{t}^{V} (1 - \lambda_{t+1}^{V}) + f_{t}(R^{V};s,\omega^{V}) +
+											f_{t}(V;s,\omega^{V})\)</span></p>
+
+										<h3>Vaccinated</h3>
+										<p><span class="math inline">\(V_{t+1} = V_{t} +S_{t}\theta_{i} - f_{t}(V;s,\omega^{V})\)</span></p>
+
+										<h3>Exposed/infected</h3>
+										<p><span class="math inline">\(E_{t+1} = E_{t} + S_{t}\lambda_{t+1} - f_{t}(E;m,\sigma)\)</span></p>
+										<p><span class="math inline">\(E_{t+1}^{V} = E_{t}^{V} + S_{t}\lambda_{t+1}^{V} - f_{t}(E^{V};q,\sigma^{V})\)</span></p>
+										
+										<h3>Infectious</h3>
+										<p><span class="math inline">\(I_{t+1}^{A} = I_{t}^{A} + (1-\phi_{i}) f_{t}(E;m,\sigma) - f_{t}(I^{A};n,\gamma)\)</span></p>
+										<p><span class="math inline">\(I_{t+1}^{S} = I_{t}^{S} + \phi_{i} f_{t}(E;m,\sigma) - f_{t}(I^{S};n,\gamma)\)</span></p>
+										<p><span class="math inline">\(I_{t+1}^{V} = I_{t}^{V} + f_{t}(E^{V};q,\sigma^{V}) - f_{t}(I^{V};r,\gamma^{V})\)</span></p>
+
+										<h3>Recovered</h3>
+										<p><span class="math inline">\(R_{t+1}^{N} = R_{t}^{N} + f_{t}(I^{A};n,\gamma) + (1-\frac{p_{i}}{\phi_{i}}) f_{t}(I^{S};n,\gamma)
+											- f_{t}(R^{N};o,\omega^{N})\)</span></p>
+										<p><span class="math inline">\(R_{t+1}^{H} = R_{t}^{H} + \frac{p_{i}}{\phi_{i}} f_{t}(I^{S};n,\gamma) -
+											f_{t}(R^{H};o,\omega^{H})\)</span></p>
+										<p><span class="math inline">\(R_{t+1}^{VH} = R_{t}^{VH} + f_{t}(I^{V};r,\gamma^{V}) - f_{t}(R^{V};s,\omega^{V})\)</span></p>
+
+										<h2>Parameters</h2>
+										<p>The table below maps all symbols to their respective parameters.</p>
+
+										<table class="table" style="width: 100%; font-size: smaller;">
+											<tr>
+												<th>Symbol</th>
+												<th>Parameter</th>
+												<th>Symbol</th>
+												<th>Parameter</th>
+											</tr>
+											<tr>
+												<td><span class="math inline">\(R_{0}\)</span></td>
+												<td>basic reproduction number</td>
+												<td>\(\omega^{VN}\)</td>
+												<td>immunity duration mean non-hospitalized vaccinated case</td>
+											</tr>
+											<tr>
+												<td>\(R_{c}\)</td>
+												<td>reproduction number under control measures for an entirely susceptible population</td>
+												<td>\(\omega^{VH}\)</td>
+												<td>immunity duration mean hospitalized vaccinated case</td>
+											</tr>
+											<tr>
+												<td>\(R_{t}\)</td>
+												<td>effective reporduction number in the presence of immunity</td>
+												<td>\(\omega^{VH}\)</td>
+												<td>immunity duration mean vaccinated individual</td>
+											</tr>
+											<tr>
+												<td>\(\theta_{i,t}\)</td>
+												<td>time-specificprobability of vaccination</td>
+												<td>\(s\)</td>
+												<td>immunity duration shape vaccinated</td>
+											</tr>
+											<tr>
+												<td>\(\sigma\)</td>
+												<td>latency period mean</td>
+												<td>\(\phi_{i}\)</td>
+												<td>probability of asymptomatic case given infection (non-vaccinated)</td>
+											</tr>
+											<tr>
+												<td>\(m\)</td>
+												<td>latency period shape non-vaccinated</td>
+												<td>\(\tau_{i}\)</td>
+												<td>probability of asymptomatic case given infection (vaccinated)</td>
+											</tr>
+											<tr>
+												<td>\(q\)</td>
+												<td>latency period shape vaccinated</td>
+												<td>\(p_{i}\)</td>
+												<td>probability of hospitalisaion given infection (non-vaccinated)</td>
+											</tr>
+											<tr>
+												<td>\(\gamma\)</td>
+												<td>infectious period mean</td>
+												<td>\(p_{i}^{V}\)</td>
+												<td>probability of hostpitalisation given infection (vaccinated)</td>
+											</tr>
+											<tr>
+												<td>\(n\)</td>
+												<td>infectious period shape non-vaccinated</td>
+												<td>\(C=c_{i,j}\)</td>
+												<td>contact matrix</td>
+											</tr>
+											<tr>
+												<td>\(r\)</td>
+												<td>infectious period shape vaccinated</td>
+												<td>\(\eta_{i}\)</td>
+												<td>relative susceptibility of age group $i$</td>
+											</tr>
+											<tr>
+												<td>\(\omega^{N}\)</td>
+												<td>immunity duration mean non-hospitalized non-vaccinated case</td>
+												<td>\(\upsilon\)</td>
+												<td>relative infectiousness of asymptomatic cases</td>
+											</tr>
+											<tr>
+												<td>\(\omega^{H}\)</td>
+												<td>immunity duration mean hospitalized non-vaccinated case</td>
+												<td>\(\mu\)</td>
+												<td>relative infectiousness of vaccinated cases (symptomatic and asymptomatic??)</td>
+											</tr>
+											<tr>
+												<td>\(o\)</td>
+												<td>immunity duration shape non-vaccinated</td>
+											</tr>
+										</table>
+
+										<h3>Next generation matrix</h3>
+										<ul>
+											<li>Expected number of secondary infections in age group <span class="math inline">\(i\)</span> resulting from contact with an index
+												case in age group <span class="math inline">\(j\)</span>: <span class="math inline">\(k_{ij} = \frac{\beta}{\gamma} \eta_{i} c_{i,j}
+												(\phi\nu+(1-\phi_{i}))\)</span>
+												<ul>
+													<li>
+														<span class="math inline">\(\eta_{i}\)</span> = relative susceptibility of of age group <span class="math inline">\(i\)</span>;
+													</li>
+													<li>
+														<span class="math inline">\(\nu\)</span> = relative infectiousness of asymptomatic cases.
+													</li>
+													<li>
+														<span class="math inline">\(c_{i,j}\)</span> = average number of daily contacts between a single individual in 
+														age group <span class="math inline">\(j\)</span> and all individuals in
+														age group <span class="math inline">\(i\)</span>;
+													</li>
+												</ul>
+											</li>
+											<li>
+												The basic reproduction number <span class="math inline">\(R_{0}\)</span> is given by the spectral radius
+												<span class="math inline">\(\rho(K)\)</span> = the largest absolute eigenvalue of <span class="math inline">\(K\)</span>.
+											</li>
+											<li>
+												As <span class="math inline">\(R_{0}\)</span> is specified in the model, the transmission parameter 
+												<span class="math inline">\(\beta\)</span> is left as a free parameter that is scaled to the correct value.
+											</li>
+										</ul>
+
+										<h3>Force of infection</h3>
+										<ul>
+										<li><span class="math inline">\(\lambda_{i,t+1}\)</span> = force of infection acting on a single 
+											individual in age group <span class="math inline">\(i\)</span> at time 
+											<span class="math inline">\(t+1\)</span>: <span class="math inline">\(\lambda_{i,t+1} = 
+												\beta \eta_{i} \sum_{j=1}^{M}
+												\frac {c_{i,j}N_{j}} {N_{i}} (\frac {I_{j,t}^{S} + I_{j,t}^{A}\nu}
+												{N_{j}})\)</span> 
+											<span class="math inline">\(\lambda_{i,t+1} = \frac {\beta \eta_{i}} {N_{i}} \sum_{j=1}^{M} c_{i,j}
+												({I_{j,t}^{S}+I_{j,t}^{A}\nu})\)</span>
+											<ul>
+												<li><span class="math inline">\(M\)</span> = number of discrete age groups (<span class="math inline">\(M = 15\)</span>);</li>
+												<li><span class="math inline">\(N_{i}\)</span> = population size of age group i.</li>
+											</ul></li>
+										</ul>
+
+								<p class="box">
+									Although as a second-year student, at times I felt way out of my depth while working on this project, I learned so 
+									much about advanced dynamic modelling techniques in such a short time. I adapted to the feeling of 
+									not-quite-understanding what is happening and persevered, reading as much as I could around the topic, reading 
+									code documentation and source code to understand where the errors were coming from. In this sense, it was a true 
+									research experience, as after all, 99.9% of research is composed of getting an otherwise ingenious and elegant 
+									idea to work.
+									<br/><br/>
+									I was fascinated by the considerations that a modeller has to make when simulating the behaviour of a complex system. 
+									Parametrising highly complex dynamic models appeared to be a challenging and data-intensive task. Of course, tuning the
+									level of complexity was also guided by the end goal of the simulations. For a highly specific and pressing issue, such as 
+									the future of the pandemic, expanding extant models was a necessary but demanding step.   
+								</p>
+
+							<footer>
+									<ul class="icons">
+										<li><a href="../projects.html" class="button large">Browse all projects</a></li>
+									</ul>
+								</footer>
+							</article>
+						</div>
+
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="../contact.html" class="button large">Contact</a></li>
+							<li><a href="https://github.com/sedaradoykova" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/hale-seda-radoykova/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<!-- <li><a href="https://open.spotify.com/playlist/3oDQchbj9IkipAaDNgHSYt" class="icon brands fa-spotify"><span class="label">Spotify</span></a></li> -->
+							<li><a href="../contact.html" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Seda Radoykova, 2023. Design: <a href="http://html5up.net">HTML5 UP</a>.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+			<script src="../../assets/js/math.js"></script>
+			<!-- include the script below for inline math   -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+
+	</body>
+</html>
